@@ -1,0 +1,6 @@
+@FINAP.HRMS.DotNetCore.WebApi_HostAddress = http://localhost:5211
+
+GET {{FINAP.HRMS.DotNetCore.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
