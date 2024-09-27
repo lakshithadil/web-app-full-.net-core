@@ -13,14 +13,6 @@
 	<PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
   </ItemGroup>
 
-  <ItemGroup>
-	<Folder Include="Business Service\Contracts\" />
-	<Folder Include="HRMS Web\DTOs\" />
-	<Folder Include="HRMS Web\Models\RequestModels\" />
-	<Folder Include="Models\" />
-	<Folder Include="Repository\Contracts\" />
-  </ItemGroup>
-
 		<ItemGroup>
 		<Compile Update="Shared\Resources\ErrorMessages.Designer.cs">
 			<DependentUpon>ErrorMessages.resx</DependentUpon>

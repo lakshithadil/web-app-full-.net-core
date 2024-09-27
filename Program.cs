@@ -1,6 +1,10 @@
 using AutoMapper;
 using System.Data;
 using System.Data.SqlClient;
+using FINAP.HRMS.DotNetCore.WebApi.Business_Service;
+using FINAP.HRMS.DotNetCore.WebApi.Business_Service.Contracts;
+using FINAP.HRMS.DotNetCore.WebApi.Repository;
+using FINAP.HRMS.DotNetCore.WebApi.Repository.Contracts;
 using FINAP.HRMS.DotNetCore.WebApi.Shared.AutoMappers;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,7 +32,7 @@ builder.Services.AddCors(options =>
 var connectionString = builder.Configuration.GetConnectionString("LocalSqlServerConnection");
 
 // Register a database connection string as a singleton service
-builder.Services.AddSingleton<IDbConnection>(sp => new SqlConnection(connectionString));
+builder.Services.AddScoped<IDbConnection>(sp => new SqlConnection(connectionString));
 
 // Register AutoMapper and create a mapping configuration
 var mappingConfig = new MapperConfiguration(mc =>
@@ -49,7 +53,10 @@ builder.Services.AddLogging(loggingBuilder =>
 
 
 // Register repositories or services 
-//builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -59,5 +59,14 @@ namespace FINAP.HRMS.DotNetCore.WebApi.Shared.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while processing the request.
+        /// </summary>
+        public static string InternalServerError {
+            get {
+                return ResourceManager.GetString("InternalServerError", resourceCulture);
+            }
+        }
     }
 }

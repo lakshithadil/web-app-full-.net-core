@@ -59,5 +59,113 @@ namespace FINAP.HRMS.DotNetCore.WebApi.Shared.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department created successfully.
+        /// </summary>
+        public static string DepartmentCreated {
+            get {
+                return ResourceManager.GetString("DepartmentCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department deleted successfully.
+        /// </summary>
+        public static string DepartmentDeleted {
+            get {
+                return ResourceManager.GetString("DepartmentDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department not found.
+        /// </summary>
+        public static string DepartmentNotFound {
+            get {
+                return ResourceManager.GetString("DepartmentNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department retrieved.
+        /// </summary>
+        public static string DepartmentRetrieved {
+            get {
+                return ResourceManager.GetString("DepartmentRetrieved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Departments retrieved.
+        /// </summary>
+        public static string DepartmentsRetrieved {
+            get {
+                return ResourceManager.GetString("DepartmentsRetrieved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department updated successfully.
+        /// </summary>
+        public static string DepartmentUpdated {
+            get {
+                return ResourceManager.GetString("DepartmentUpdated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee created successfully.
+        /// </summary>
+        public static string EmployeeCreated {
+            get {
+                return ResourceManager.GetString("EmployeeCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee deleted successfully.
+        /// </summary>
+        public static string EmployeeDeleted {
+            get {
+                return ResourceManager.GetString("EmployeeDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee not found.
+        /// </summary>
+        public static string EmployeeNotFound {
+            get {
+                return ResourceManager.GetString("EmployeeNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee retrieved.
+        /// </summary>
+        public static string EmployeeRetrieved {
+            get {
+                return ResourceManager.GetString("EmployeeRetrieved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employees retrieved.
+        /// </summary>
+        public static string EmployeesRetrieved {
+            get {
+                return ResourceManager.GetString("EmployeesRetrieved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee updated successfully.
+        /// </summary>
+        public static string EmployeeUpdated {
+            get {
+                return ResourceManager.GetString("EmployeeUpdated", resourceCulture);
+            }
+        }
     }
 }
