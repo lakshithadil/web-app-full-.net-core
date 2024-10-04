@@ -66,7 +66,7 @@ namespace FINAP.HRMS.DotNetCore.WebApi.Repository
                                 DateOfBirth = reader.GetDateTime(4),
                                 Age = reader.GetInt32(5),
                                 Salary = reader.GetDecimal(6),
-                                Department = reader.GetInt32(7)
+                                Department = reader.GetString(7)
                             });
                         }
                     }
@@ -108,7 +108,8 @@ namespace FINAP.HRMS.DotNetCore.WebApi.Repository
                                 DateOfBirth = reader.GetDateTime(4),
                                 Age = reader.GetInt32(5),
                                 Salary = reader.GetDecimal(6),
-                                Department = reader.GetInt32(7)
+                                DepartmentId = reader.GetInt32(7),
+                                Department = reader.GetString(8)
                             };
                         }
                     }
@@ -137,7 +138,7 @@ namespace FINAP.HRMS.DotNetCore.WebApi.Repository
                     cmd.Parameters.AddWithValue("@EmailAddress", employee.EmailAddress);
                     cmd.Parameters.AddWithValue("@DateOfBirth", employee.DateOfBirth);
                     cmd.Parameters.AddWithValue("@Salary", employee.Salary);
-                    cmd.Parameters.AddWithValue("@Department", employee.Department);
+                    cmd.Parameters.AddWithValue("@DepartmentId", employee.DepartmentId);
 
                     await _sqlConnection.OpenAsync();
                     await cmd.ExecuteNonQueryAsync();
