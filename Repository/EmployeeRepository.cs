@@ -28,7 +28,7 @@ namespace FINAP.HRMS.DotNetCore.WebApi.Repository
                     cmd.Parameters.AddWithValue("@EmailAddress", employee.EmailAddress);
                     cmd.Parameters.AddWithValue("@DateOfBirth", employee.DateOfBirth);
                     cmd.Parameters.AddWithValue("@Salary", employee.Salary);
-                    cmd.Parameters.AddWithValue("@Department", employee.Department);
+                    cmd.Parameters.AddWithValue("@DepartmentId", employee.DepartmentId);
 
                     await _sqlConnection.OpenAsync();
                     await cmd.ExecuteNonQueryAsync();
